@@ -11,8 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class CondimentsController {
     @GetMapping
     public ModelAndView list() {
-        ModelAndView modelAndView = new ModelAndView("index");
-        return modelAndView;
+        return new ModelAndView("index");
     }
 
     @RequestMapping("/save")
